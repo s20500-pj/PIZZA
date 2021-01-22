@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 });
 
-$(window).resize(function() {
+window.onload = function ()  {
     if ($(window).width() < 960) {
         var x = document.getElementsByClassName("bodycontent");
         for (var i = 0; i < x.length; i++) {
@@ -29,4 +29,4 @@ $(window).resize(function() {
         var y = document.getElementsByTagName('footer');
         y[0].style.flexDirection="row";
     }
-});
+};
